@@ -13,7 +13,7 @@ snapshots = [None]*(num_snaps)
 path = "/data/jadame/nucome/0.0eV/"
 
 #the path to the reference run
-ref = input("Please enter the path to the reference run that the snapshots are compared to \n/data/jadame/nucome/0.0eV/")
+ref = input("Please enter the path to the reference run that the snapshots are compared to \n" + path)
 
 #snapshot_name = "test1024hybrid_snap005_cdm"
 #snapshot1 = '/data/jadame/nucome/0.0eV/output/' + snapshot_name  #snapshot name
@@ -43,7 +43,7 @@ ax[0,0].loglog(ref_k, ref_Pk0, label = "reference run")
 #loop over all snapshots
 for i in range(num_snaps):
     
-    snapshots[i] = input("Enter the path to snapshot " + str(i+1) + "\n/data/jadame/nucome/0.0eV/")
+    snapshots[i] = input("Enter the path to snapshot " + str(i+1) + "\n" + path)
     name = input("Give a name for the snapshot simulation \n")
     print("Analyzing snapshot " + str(i+1) + "... \n")
     
