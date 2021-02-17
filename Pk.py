@@ -20,8 +20,8 @@ ref_mass = path + mass + "Gadget3/output/snapdir_005/snap_005"
 ref = "/madfs/nucome/0.0eV/Gadget3/output/snapdir_005/snap_005"
 #ref_150 = /madfs/nucome/0.15eV/Gadget3/output/snapdir_005/snap_005
 
-grid     = 256                    #grid size, chose a small one for now because of RAM issues
-ptypes   = [1]                   #CDM + neutrinos
+grid     = 256                     #grid size, chose a small one for now because of RAM issues
+ptypes   = [1]                     #we investigate the CDM + baryon power spectrum 
 MAS      = 'CIC'                   #Cloud-in-Cell
 do_RSD   = False                   #dont do redshif-space distortions
 axis     = 0                       #axis along which place RSD; not used here
